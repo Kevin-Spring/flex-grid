@@ -1,0 +1,76 @@
+
+body {
+  background: #2F97C1;
+  box-sizing: border-box;
+}
+.grid-container {
+  width: 80%;
+  padding: 5%;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px -10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item {
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+.inner {
+  background-color: #F7F7FF;
+  border-radius: 5px;
+  height: 5vh;
+  box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);  
+}
+.grid-item:hover {
+  transform: scale(1.01);
+}
+
+/* Istället för gap som blir fel med den procentuella uträkningen av width på grid-item så utnyttjar vi en padding på grid-item och sen flyttar ut det hela till containerns yttre kant genom att ta samma padding mängd i -margin. Så utrymmen skapas aka gap men padding på vardera sida (left, right) försvinner med hjälp av -margin på containern. 
+
+Med gap hade man varit tvungen att ta procent som i sltändan blir kring 96% istället för 100%.
+*/
+
+.col-11 {
+  width: 91.663%;
+}
+.col-10 {
+  width: 83.33%
+}
+.col-9 {
+  width: 74.997%;
+}
+.col-8 {
+  width: 66.664%;
+}
+.col-7 {
+  width: 58.331%;
+}
+.col-6 {
+  width: 49.998%
+}
+.col-5{
+  width: 41.665%;
+}
+.col-4 {
+  width: 33.332%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-2 {
+  width: 16.666%;
+}
+.col-1 {
+  width: 8.333%;
+}

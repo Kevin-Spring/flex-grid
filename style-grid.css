@@ -1,0 +1,106 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(128, 128, 128, 0.192);
+}
+.grid-container{
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(12, 8.3%);
+    grid-template-rows: repeat(11, 9.09%);
+    height: 70vh;
+}
+.grid-row{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: grid;
+    padding: 16px;
+    gap: 20px;
+}
+.row-1{
+    grid-template-columns: 1fr 11fr;
+}
+.row-2 {
+    grid-template-columns: 2fr 10fr;
+}
+.row-3 {
+    grid-template-columns: 3fr 9fr;
+}
+.row-4 {
+    grid-template-columns: 4fr 8fr;
+}
+.row-5 {
+    grid-template-columns: 5fr 7fr;
+}
+.row-6 {
+    grid-template-columns: 6fr 6fr;
+}
+.row-7 {
+    grid-template-columns: 7fr 5fr;
+}
+.row-8 {
+    grid-template-columns: 8fr 4fr;
+}
+.row-9 {
+    grid-template-columns: 9fr 3fr;
+}
+.row-10 {
+    grid-template-columns: 10fr 2fr;
+}
+.row-11 {
+    grid-template-columns: 11fr 1fr;
+}
+.grid-item {
+    background-color: white;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+       -moz-box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+            box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 760px){
+    body {
+        font-size: 6px;
+    }
+    .grid-container{
+        padding: 1rem;
+    }
+    .grid-row{
+        gap: 5px;
+    }
+}
